@@ -1,609 +1,905 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SABAMIE — Skincare Natural | Colección 2026</title>
-<meta name="description" content="SABAMIE: rituales de skincare hechos con ingredientes naturales. Sérums, cremas y aceites faciales formulados para revelar tu piel más luminosa.">
-<meta name="theme-color" content="#8A9A80">
-<link rel="icon" type="image/png" href="img/icon.png">
-<link rel="canonical" href="https://www.sabamie.com/">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SABAMIE · Ingeniería en Cosméticos | Skincare con base científica</title>
+<meta name="description" content="SABAMIE — ingeniería en cosméticos. Sueros, cremas y protección solar formulados con ciencia y activos inteligentes para transformar tu piel. Colección 2026." />
+<meta name="keywords" content="skincare, sabamie, suero facial, ácido hialurónico, niacinamida, protector solar, células madre, cosméticos, cuidado de la piel, rutina facial" />
+<meta name="author" content="SABAMIE" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#1a2233" />
+<link rel="canonical" href="https://www.sabamie.com/" />
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="SABAMIE — Skincare Natural | Colección 2026">
-<meta property="og:description" content="Rituales de skincare hechos con ingredientes naturales. Descubre la colección SABAMIE.">
-<meta property="og:url" content="https://www.sabamie.com/">
-<meta property="og:image" content="https://www.sabamie.com/img/og-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SABAMIE — Skincare Natural">
-<meta name="twitter:description" content="Rituales de skincare hechos con ingredientes naturales.">
-<meta name="twitter:image" content="https://www.sabamie.com/img/og-image.jpg">
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SABAMIE" />
+<meta property="og:title" content="SABAMIE · Ingeniería en Cosméticos" />
+<meta property="og:description" content="Ciencia que transforma tu piel. Descubre la colección 2026 de skincare SABAMIE." />
+<meta property="og:image" content="https://www.sabamie.com/img/hero.jpg" />
+<meta property="og:url" content="https://www.sabamie.com/" />
+<meta property="og:locale" content="es_MX" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SABAMIE · Ingeniería en Cosméticos" />
+<meta name="twitter:description" content="Ciencia que transforma tu piel. Colección 2026." />
+<meta name="twitter:image" content="https://www.sabamie.com/img/hero.jpg" />
 
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="apple-touch-icon" href="img/favicon.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Structured data: Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Store",
+  "@type": "Organization",
   "name": "SABAMIE",
-  "description": "Skincare natural: sérums, cremas y aceites faciales.",
+  "alternateName": "Sabamie Skincare",
+  "description": "Ingeniería en cosméticos. Skincare formulado con ciencia y activos inteligentes.",
   "url": "https://www.sabamie.com/",
-  "image": "https://www.sabamie.com/img/og-image.jpg"
+  "logo": "https://www.sabamie.com/img/favicon.png",
+  "slogan": "Ciencia que transforma tu piel",
+  "sameAs": [
+    "https://www.instagram.com/sabamieskincare",
+    "https://www.facebook.com/SabamieSkincare"
+  ]
 }
 </script>
+<!-- Structured data: Product catalog -->
+<script type="application/ld+json" id="ld-catalog"></script>
 
 <style>
   :root{
-    --cream: #F7F2EA;
-    --cream-2: #F0E9DD;
-    --sage: #8A9A80;
-    --sage-dark: #6C7C62;
-    --sage-light: #B0BEA6;
-    --blush: #DEC4B4;
-    --beige: #D8C3A5;
-    --gold: #C4A06C;
-    --charcoal: #2B2B28;
-    --muted: #5c584f;
-    --white: #FFFDFA;
+    --cream:#F7F0E6;
+    --cream-2:#FBF6EE;
+    --cream-3:#EFE6D7;
+    --ink:#1b2536;
+    --ink-soft:#3a4256;
+    --muted:#7c766c;
+    --gold:#c1a05a;
+    --gold-deep:#a4853f;
+    --line:#e4d8c5;
+    --white:#ffffff;
+    --shadow:0 18px 50px -20px rgba(40,32,20,.35);
+    --shadow-sm:0 8px 24px -12px rgba(40,32,20,.28);
+    --r:18px;
+    --serif:'Playfair Display',Georgia,serif;
+    --sans:'Montserrat',system-ui,-apple-system,sans-serif;
   }
-
-  *{ margin:0; padding:0; box-sizing:border-box; }
-
-  html{ scroll-behavior:smooth; }
-
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{
-    font-family:'Montserrat', sans-serif;
-    background:var(--cream);
-    color:var(--charcoal);
-    line-height:1.6;
-    overflow-x:hidden;
+    font-family:var(--sans);color:var(--ink);background:var(--cream);
+    line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;
   }
-
-  h1,h2,h3,h4{
-    font-family:'Cormorant Garamond', serif;
-    font-weight:500;
-    letter-spacing:0.01em;
+  h1,h2,h3,.serif{font-family:var(--serif)}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  .wrap{width:min(1200px,92vw);margin-inline:auto}
+  .eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55em;justify-content:center;
+    padding:.85em 1.8em;border-radius:50px;font-weight:500;font-size:.9rem;
+    letter-spacing:.04em;transition:.35s cubic-bezier(.2,.7,.3,1);white-space:nowrap;
   }
+  .btn-primary{background:var(--ink);color:var(--cream-2)}
+  .btn-primary:hover{background:#0f1826;transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+  .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#2a2212}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(164,133,63,.7)}
+  .btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--cream-2)}
 
-  a{ color:inherit; text-decoration:none; }
-  img{ max-width:100%; display:block; }
-  .container{ max-width:1180px; margin:0 auto; padding:0 24px; }
-
-  /* ---------- Reveal animation ---------- */
-  .reveal{ opacity:0; transform:translateY(24px); transition:opacity 0.8s ease, transform 0.8s ease; }
-  .reveal.visible{ opacity:1; transform:translateY(0); }
-  .reveal-d1.visible{ transition-delay:0.15s; }
-  .reveal-d2.visible{ transition-delay:0.3s; }
+  /* ---------- Announcement ---------- */
+  .announce{background:var(--ink);color:var(--cream-2);text-align:center;font-size:.74rem;
+    letter-spacing:.22em;text-transform:uppercase;padding:.55em 1em;position:relative;z-index:60}
+  .announce b{color:var(--gold)}
 
   /* ---------- Header ---------- */
-  header{
-    position:fixed; top:0; left:0; right:0; z-index:100;
-    background:rgba(247,242,234,0.92);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid rgba(43,43,40,0.06);
-  }
-  .nav{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:18px 24px;
-    max-width:1180px; margin:0 auto;
-  }
-  .logo{
-    font-family:'Cormorant Garamond', serif;
-    font-size:1.7rem;
-    letter-spacing:0.12em;
-    font-weight:600;
-    color:var(--sage-dark);
-  }
-  .nav-links{ display:flex; gap:36px; list-style:none; }
-  .nav-links a{
-    font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;
-    color:var(--muted); transition:color 0.25s ease;
-  }
-  .nav-links a:hover{ color:var(--sage-dark); }
-  .nav-cta{
-    background:var(--sage-dark); color:var(--white) !important;
-    padding:10px 22px; border-radius:30px; font-size:0.78rem;
-    text-transform:uppercase; letter-spacing:0.08em;
-    transition:background 0.25s ease;
-  }
-  .nav-cta:hover{ background:var(--charcoal); }
-  .nav-toggle{ display:none; background:none; border:none; font-size:1.5rem; color:var(--charcoal); cursor:pointer; }
+  header{position:sticky;top:0;z-index:50;transition:.4s;
+    background:rgba(247,240,230,.72);backdrop-filter:blur(14px);
+    border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(247,240,230,.94);border-bottom-color:var(--line);box-shadow:0 6px 24px -18px rgba(0,0,0,.4)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0;gap:1.5rem}
+  .brand{display:flex;flex-direction:column;line-height:.9;user-select:none}
+  .brand .word{font-family:var(--serif);font-weight:600;font-size:1.6rem;letter-spacing:.1em;color:var(--ink)}
+  .brand .word i{font-style:normal;color:var(--gold-deep)}
+  .brand small{font-size:.52rem;letter-spacing:.42em;text-transform:uppercase;color:var(--muted);margin-top:3px;padding-left:.16em}
+  nav.links{display:flex;gap:2rem}
+  nav.links a{font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;font-weight:400;position:relative;color:var(--ink-soft)}
+  nav.links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:1.5px;background:var(--gold);transition:.35s}
+  nav.links a:hover{color:var(--ink)}
+  nav.links a:hover::after{width:100%}
+  .nav-tools{display:flex;align-items:center;gap:1.1rem}
+  .icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;transition:.3s;color:var(--ink)}
+  .icon-btn:hover{background:var(--cream-3)}
+  .icon-btn svg{width:20px;height:20px}
+  .cart-btn{position:relative}
+  .cart-count{position:absolute;top:2px;right:2px;background:var(--gold-deep);color:#fff;font-size:.62rem;
+    min-width:17px;height:17px;border-radius:50%;display:grid;place-items:center;font-weight:600;transform:scale(0);transition:.3s}
+  .cart-count.show{transform:scale(1)}
+  .burger{display:none}
 
   /* ---------- Hero ---------- */
-  .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex; align-items:center;
-    background:url('img/hero-bg.jpg') center/cover no-repeat;
-    padding-top:90px;
-  }
-  .hero-inner{
-    display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:center;
-    width:100%;
-  }
-  .hero-eyebrow{
-    font-size:0.78rem; text-transform:uppercase; letter-spacing:0.2em;
-    color:var(--sage-dark); margin-bottom:18px; font-weight:500;
-  }
-  .hero h1{
-    font-size:clamp(2.6rem, 5.5vw, 4.2rem);
-    line-height:1.05;
-    color:var(--charcoal);
-    margin-bottom:22px;
-  }
-  .hero h1 em{ font-style:italic; color:var(--sage-dark); }
-  .hero p{
-    font-size:1.05rem; color:var(--muted); max-width:460px; margin-bottom:32px;
-  }
-  .btn-row{ display:flex; gap:18px; flex-wrap:wrap; }
-  .btn{
-    display:inline-block; padding:15px 32px; border-radius:30px;
-    font-size:0.82rem; text-transform:uppercase; letter-spacing:0.08em;
-    transition:all 0.3s ease; cursor:pointer; border:1px solid transparent;
-  }
-  .btn-primary{ background:var(--charcoal); color:var(--white); }
-  .btn-primary:hover{ background:var(--sage-dark); transform:translateY(-2px); }
-  .btn-outline{ border-color:var(--charcoal); color:var(--charcoal); }
-  .btn-outline:hover{ background:var(--charcoal); color:var(--white); }
-  .hero-img{ position:relative; }
-  .hero-img img{ border-radius:16px; box-shadow:0 30px 60px -20px rgba(43,43,40,0.25); }
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;background:url(img/hero.jpg) center/cover no-repeat;background-attachment:fixed;
+    filter:saturate(1.02)}
+  .hero-bg::after{content:'';position:absolute;inset:0;
+    background:linear-gradient(100deg,rgba(247,240,230,.96) 0%,rgba(247,240,230,.7) 38%,rgba(247,240,230,.15) 62%,rgba(247,240,230,0) 100%)}
+  .hero-inner{position:relative;z-index:2;max-width:640px;padding:4rem 0}
+  .hero h1{font-size:clamp(2.8rem,6vw,5rem);font-weight:600;line-height:1.02;letter-spacing:.01em;margin:.6rem 0 .3rem}
+  .hero h1 em{font-style:italic;color:var(--gold-deep)}
+  .hero p.lead{font-size:1.06rem;color:var(--ink-soft);max-width:460px;margin:1.2rem 0 2rem;font-weight:300}
+  .hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:1.6rem 2.2rem;margin-top:2.6rem}
+  .hero-meta div{border-left:1px solid var(--line);padding-left:.9rem}
+  .hero-meta b{font-family:var(--serif);font-size:1.5rem;color:var(--ink);display:block;line-height:1}
+  .hero-meta span{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .float{position:absolute;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.9),rgba(255,255,255,.15) 60%,transparent 72%);
+    border:1px solid rgba(255,255,255,.5);box-shadow:inset 0 0 30px rgba(255,255,255,.4)}
 
-  /* ---------- Section shared ---------- */
-  section{ padding:110px 0; }
-  .section-head{ text-align:center; max-width:640px; margin:0 auto 60px; }
-  .section-eyebrow{
-    font-size:0.78rem; text-transform:uppercase; letter-spacing:0.2em;
-    color:var(--gold); margin-bottom:14px; font-weight:500;
-  }
-  .section-head h2{ font-size:clamp(2rem, 4vw, 2.8rem); margin-bottom:16px; }
-  .section-head p{ color:var(--muted); }
+  /* ---------- Marquee trust ---------- */
+  .trust{background:var(--ink);color:var(--cream-2);padding:1.1rem 0;overflow:hidden}
+  .trust .row{display:flex;gap:3.5rem;align-items:center;white-space:nowrap;animation:slide 32s linear infinite;width:max-content}
+  .trust span{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:.7rem;color:#d9d2c6}
+  .trust span::before{content:'✦';color:var(--gold)}
+  @keyframes slide{to{transform:translateX(-50%)}}
 
-  /* ---------- Products ---------- */
-  .products{ background:var(--white); }
-  .product-grid{
-    display:grid; grid-template-columns:repeat(3, 1fr); gap:32px;
-  }
-  .product-card{
-    background:var(--cream); border-radius:18px; overflow:hidden;
-    transition:transform 0.35s ease, box-shadow 0.35s ease;
-  }
-  .product-card:hover{ transform:translateY(-8px); box-shadow:0 24px 40px -18px rgba(43,43,40,0.18); }
-  .product-media{ aspect-ratio:1/1; overflow:hidden; }
-  .product-media img{ width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; }
-  .product-card:hover .product-media img{ transform:scale(1.06); }
-  .product-body{ padding:26px 26px 30px; }
-  .product-tag{ font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--sage-dark); margin-bottom:8px; display:block; }
-  .product-body h3{ font-size:1.4rem; margin-bottom:8px; }
-  .product-body p{ font-size:0.92rem; color:var(--muted); margin-bottom:18px; }
-  .product-footer{ display:flex; align-items:center; justify-content:space-between; }
-  .price{ font-family:'Cormorant Garamond', serif; font-size:1.3rem; color:var(--charcoal); font-weight:600; }
-  .add-btn{
-    font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em;
-    padding:9px 18px; border-radius:24px; border:1px solid var(--charcoal);
-    background:transparent; color:var(--charcoal); cursor:pointer; transition:all 0.25s ease;
-  }
-  .add-btn:hover{ background:var(--charcoal); color:var(--white); }
+  /* ---------- Section base ---------- */
+  section{position:relative}
+  .sect{padding:5.5rem 0}
+  .sect-head{text-align:center;max-width:640px;margin:0 auto 3.2rem}
+  .sect-head h2{font-size:clamp(2rem,4vw,3rem);font-weight:600;margin:.5rem 0;line-height:1.05}
+  .sect-head p{color:var(--muted);font-weight:300}
+  .divider{width:52px;height:1px;background:var(--gold);margin:1rem auto;position:relative}
+  .divider::after{content:'✦';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:var(--gold);font-size:.7rem;background:var(--cream);padding:0 .4rem}
 
-  /* ---------- Ingredients ---------- */
-  .ingredients{
-    background:url('img/section-bg-1.jpg') center/cover no-repeat;
-  }
-  .ingredient-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:36px; }
-  .ingredient-card{ text-align:center; }
-  .ingredient-media{
-    width:180px; height:180px; border-radius:50%; overflow:hidden; margin:0 auto 22px;
-    border:6px solid var(--white); box-shadow:0 18px 32px -14px rgba(43,43,40,0.2);
-  }
-  .ingredient-media img{ width:100%; height:100%; object-fit:cover; }
-  .ingredient-card h3{ font-size:1.3rem; margin-bottom:10px; }
-  .ingredient-card p{ color:var(--muted); font-size:0.92rem; max-width:280px; margin:0 auto; }
+  /* ---------- Benefits ---------- */
+  .benefits{background:var(--cream-2)}
+  .benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+  .benefit{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:2rem 1.6rem;text-align:center;transition:.4s}
+  .benefit:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .benefit .ic{width:56px;height:56px;margin:0 auto 1rem;border-radius:50%;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--cream-3),#fff);border:1px solid var(--line);color:var(--gold-deep)}
+  .benefit .ic svg{width:26px;height:26px}
+  .benefit h3{font-size:1.25rem;font-weight:600;margin-bottom:.2rem}
+  .benefit p{font-size:.82rem;color:var(--muted)}
 
-  /* ---------- About / Philosophy ---------- */
-  .about{ background:url('img/section-bg-2.jpg') center/cover no-repeat; }
-  .about-inner{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
-  .about-media{ position:relative; }
-  .about-media img{ border-radius:18px; box-shadow:0 24px 50px -20px rgba(43,43,40,0.25); }
-  .about h2{ font-size:clamp(2rem, 4vw, 2.6rem); margin-bottom:20px; }
-  .about p{ color:var(--muted); margin-bottom:18px; }
-  .stat-row{ display:flex; gap:40px; margin-top:32px; }
-  .stat h4{ font-size:2.2rem; color:var(--sage-dark); }
-  .stat span{ font-size:0.78rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); }
+  /* ---------- Filters + Shop ---------- */
+  .filters{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem}
+  .chip{padding:.55em 1.3em;border-radius:50px;border:1px solid var(--line);font-size:.78rem;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-soft);transition:.3s;background:var(--cream-2)}
+  .chip:hover{border-color:var(--gold)}
+  .chip.active{background:var(--ink);color:var(--cream-2);border-color:var(--ink)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem}
+  .card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+    display:flex;flex-direction:column;transition:.45s cubic-bezier(.2,.7,.3,1);position:relative}
+  .card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:#dcc9aa}
+  .card .media{position:relative;aspect-ratio:1/1;background:#F8F2EB;overflow:hidden}
+  .card .media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1)}
+  .card:hover .media img{transform:scale(1.06)}
+  .tag{position:absolute;top:12px;left:12px;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;
+    padding:.35em .7em;border-radius:50px;background:rgba(255,255,255,.9);color:var(--ink);font-weight:500;backdrop-filter:blur(4px)}
+  .tag.accent{color:#fff}
+  .quick{position:absolute;inset:auto 0 0 0;background:rgba(27,37,54,.92);color:var(--cream-2);
+    text-align:center;padding:.8em;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;
+    transform:translateY(100%);transition:.4s;backdrop-filter:blur(4px)}
+  .card:hover .quick{transform:translateY(0)}
+  .card .body{padding:1.1rem 1.1rem 1.3rem;display:flex;flex-direction:column;flex:1}
+  .card .cat{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .card h3{font-size:1.5rem;font-weight:600;line-height:1;margin:.15rem 0 .1rem}
+  .card .sub{font-size:.78rem;color:var(--muted);min-height:2.4em;margin-bottom:.5rem}
+  .stars{color:var(--gold);font-size:.8rem;letter-spacing:.08em;margin-bottom:.7rem}
+  .stars small{color:var(--muted);letter-spacing:0;margin-left:.3em}
+  .card .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+  .price{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--ink)}
+  .price small{font-size:.7rem;color:var(--muted);font-family:var(--sans);font-weight:300}
+  .add{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--cream-2);display:grid;place-items:center;transition:.3s;flex:none}
+  .add:hover{background:var(--gold-deep);transform:rotate(90deg)}
+  .add svg{width:20px;height:20px}
 
-  /* ---------- Testimonials ---------- */
-  .testimonials{
-    background:url('img/testimonial-bg.jpg') center/cover no-repeat;
-    color:var(--white);
-  }
-  .testimonials .section-head p{ color:rgba(255,253,250,0.8); }
-  .testimonials .section-eyebrow{ color:var(--beige); }
-  .testimonials .section-head h2{ color:var(--white); }
-  .testimonial-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; }
-  .testimonial-card{
-    background:rgba(255,253,250,0.1);
-    border:1px solid rgba(255,253,250,0.2);
-    border-radius:16px; padding:32px;
-    backdrop-filter:blur(4px);
-  }
-  .stars{ color:var(--gold); font-size:0.9rem; margin-bottom:16px; letter-spacing:2px; }
-  .testimonial-card p{ font-size:0.95rem; margin-bottom:20px; color:rgba(255,253,250,0.92); }
-  .t-author{ font-size:0.82rem; font-weight:500; letter-spacing:0.03em; }
-  .t-role{ font-size:0.75rem; color:rgba(255,253,250,0.6); }
+  /* ---------- Parallax bands ---------- */
+  .band{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+  .band .pbg{position:absolute;inset:0;background-size:cover;background-position:center;background-attachment:fixed}
+  .band .pbg::after{content:'';position:absolute;inset:0;background:rgba(247,240,230,.55)}
+  .band.dark .pbg::after{background:linear-gradient(rgba(20,26,38,.5),rgba(20,26,38,.5))}
+  .band-inner{position:relative;z-index:2;max-width:720px;padding:4rem 1rem}
+  .band-inner .q{font-family:var(--serif);font-size:clamp(1.8rem,4vw,3rem);font-weight:500;line-height:1.15;font-style:italic}
+  .band.dark .band-inner{color:var(--cream-2)}
+  .band-inner .attr{margin-top:1.4rem;letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;color:var(--gold-deep)}
+  .band.dark .attr{color:var(--gold)}
+
+  /* ---------- Routine ---------- */
+  .routine{background:var(--cream-2)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .step{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.8rem;position:relative;transition:.4s;overflow:hidden}
+  .step:hover{transform:translateY(-6px);box-shadow:var(--shadow-sm)}
+  .step .num{font-family:var(--serif);font-size:3.4rem;font-weight:600;color:var(--cream-3);line-height:.8;position:absolute;top:1rem;right:1.2rem}
+  .step .k{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .step h3{font-size:1.55rem;font-weight:600;margin:.1rem 0 .4rem}
+  .step p{font-size:.85rem;color:var(--muted)}
+
+  /* ---------- Quiz / find ---------- */
+  .quiz-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+  .obj{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem 1rem;text-align:center;cursor:pointer;transition:.35s}
+  .obj:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm);border-color:var(--gold)}
+  .obj .ic{width:48px;height:48px;margin:0 auto .8rem;border-radius:50%;display:grid;place-items:center;background:var(--cream-3);color:var(--gold-deep)}
+  .obj .ic svg{width:24px;height:24px}
+  .obj b{font-size:.9rem;display:block}
+  .obj span{font-size:.72rem;color:var(--muted)}
 
   /* ---------- Newsletter ---------- */
-  .newsletter{ background:var(--charcoal); color:var(--white); text-align:center; }
-  .newsletter h2{ font-size:clamp(1.8rem, 3.5vw, 2.4rem); margin-bottom:16px; color:var(--white); }
-  .newsletter p{ color:rgba(255,253,250,0.7); max-width:480px; margin:0 auto 32px; }
-  .newsletter-form{ display:flex; justify-content:center; gap:12px; max-width:460px; margin:0 auto; flex-wrap:wrap; }
-  .newsletter-form input{
-    flex:1; min-width:220px; padding:15px 20px; border-radius:30px; border:1px solid rgba(255,253,250,0.25);
-    background:rgba(255,253,250,0.06); color:var(--white); font-family:'Montserrat', sans-serif; font-size:0.9rem;
-  }
-  .newsletter-form input::placeholder{ color:rgba(255,253,250,0.5); }
-  .newsletter-form button{
-    background:var(--gold); color:var(--charcoal); border:none; padding:15px 30px; border-radius:30px;
-    font-size:0.82rem; text-transform:uppercase; letter-spacing:0.06em; cursor:pointer; transition:background 0.25s ease;
-  }
-  .newsletter-form button:hover{ background:var(--beige); }
-  .form-msg{ margin-top:16px; font-size:0.85rem; color:var(--sage-light); min-height:1.2em; }
+  .news{background:var(--ink);color:var(--cream-2);border-radius:var(--r);padding:3.5rem;text-align:center;position:relative;overflow:hidden}
+  .news h2{color:var(--cream-2);font-size:2.4rem;font-weight:600}
+  .news p{color:#c9c1b4;font-weight:300;max-width:440px;margin:.6rem auto 1.6rem}
+  .news form{display:flex;gap:.6rem;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+  .news input{flex:1;min-width:220px;padding:.9em 1.3em;border-radius:50px;border:1px solid #3a4256;background:#222c40;color:#fff;font-family:inherit}
+  .news input::placeholder{color:#8a8272}
+  .news .molecule{position:absolute;opacity:.12;font-size:12rem;right:-2rem;top:-3rem;color:var(--gold)}
 
   /* ---------- Footer ---------- */
-  footer{ background:var(--cream-2); padding:64px 0 28px; }
-  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:48px; }
-  .footer-brand .logo{ margin-bottom:14px; }
-  .footer-brand p{ color:var(--muted); font-size:0.88rem; max-width:280px; }
-  .footer-col h4{ font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:18px; font-family:'Montserrat',sans-serif; font-weight:600; }
-  .footer-col ul{ list-style:none; }
-  .footer-col li{ margin-bottom:10px; }
-  .footer-col a{ color:var(--muted); font-size:0.88rem; transition:color 0.25s ease; }
-  .footer-col a:hover{ color:var(--sage-dark); }
-  .footer-bottom{
-    border-top:1px solid rgba(43,43,40,0.08); padding-top:24px;
-    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;
-  }
-  .footer-bottom p{ font-size:0.8rem; color:var(--muted); }
-  .socials{ display:flex; gap:16px; }
-  .socials a{
-    width:36px; height:36px; border-radius:50%; border:1px solid rgba(43,43,40,0.15);
-    display:flex; align-items:center; justify-content:center; font-size:0.85rem; color:var(--muted);
-    transition:all 0.25s ease;
-  }
-  .socials a:hover{ background:var(--sage-dark); color:var(--white); border-color:var(--sage-dark); }
+  footer{background:var(--cream-3);padding:4rem 0 1.5rem;border-top:1px solid var(--line)}
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:2rem;margin-bottom:2.5rem}
+  .foot-grid h4{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-bottom:1rem;font-weight:600}
+  .foot-grid a{display:block;font-size:.85rem;color:var(--ink-soft);margin-bottom:.5rem;transition:.25s}
+  .foot-grid a:hover{color:var(--gold-deep);padding-left:4px}
+  .foot-brand .word{font-family:var(--serif);font-weight:600;font-size:1.7rem;letter-spacing:.16em}
+  .foot-brand .word i{color:var(--gold-deep);font-style:normal}
+  .foot-brand p{font-size:.85rem;color:var(--muted);margin:.6rem 0 1rem;max-width:280px}
+  .socials{display:flex;gap:.6rem}
+  .socials a{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--ink);transition:.3s}
+  .socials a:hover{background:var(--ink);color:var(--cream-2);transform:translateY(-3px)}
+  .socials svg{width:18px;height:18px}
+  .pays{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
+  .pays span{font-size:.6rem;letter-spacing:.1em;border:1px solid var(--line);border-radius:6px;padding:.35em .6em;color:var(--muted);background:var(--white)}
+  .legal{border-top:1px solid var(--line);padding-top:1.4rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.72rem;color:var(--muted)}
+  .cofepris{font-size:.68rem;color:var(--muted);letter-spacing:.06em}
 
-  /* ---------- Cart toast ---------- */
-  .toast{
-    position:fixed; bottom:28px; left:50%; transform:translateX(-50%) translateY(120%);
-    background:var(--charcoal); color:var(--white); padding:14px 28px; border-radius:30px;
-    font-size:0.85rem; z-index:200; transition:transform 0.4s ease; letter-spacing:0.02em;
-  }
-  .toast.show{ transform:translateX(-50%) translateY(0); }
+  /* ---------- Modal ---------- */
+  .overlay{position:fixed;inset:0;background:rgba(20,26,38,.55);backdrop-filter:blur(3px);z-index:100;opacity:0;visibility:hidden;transition:.4s}
+  .overlay.open{opacity:1;visibility:visible}
+  .modal{position:fixed;z-index:101;left:50%;top:50%;transform:translate(-50%,-46%) scale(.96);
+    width:min(920px,94vw);max-height:92vh;overflow:auto;background:var(--cream-2);border-radius:var(--r);
+    opacity:0;visibility:hidden;transition:.45s cubic-bezier(.2,.7,.3,1);box-shadow:var(--shadow)}
+  .modal.open{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+  .modal-grid{display:grid;grid-template-columns:1fr 1fr}
+  .modal-media{background:#F8F2EB;position:relative}
+  .modal-media img{width:100%;height:100%;object-fit:cover}
+  .modal-body{padding:2.4rem}
+  .modal-body .cat{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+  .modal-body h2{font-size:2.4rem;font-weight:600;line-height:1;margin:.2rem 0}
+  .modal-body .tagline{font-size:.9rem;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.8rem}
+  .modal-body .desc{font-size:.9rem;color:var(--muted);margin-bottom:1.2rem}
+  .feat{list-style:none;margin-bottom:1.4rem}
+  .feat li{display:flex;gap:.7rem;font-size:.86rem;padding:.4rem 0;border-bottom:1px solid var(--line);align-items:flex-start}
+  .feat li b{display:block;color:var(--ink)}
+  .feat li span{color:var(--muted);font-size:.8rem}
+  .feat .fic{color:var(--gold-deep);flex:none;margin-top:2px}
+  .feat .fic svg{width:18px;height:18px}
+  .modal-price{display:flex;align-items:baseline;gap:.6rem;margin-bottom:1.2rem}
+  .modal-price .p{font-family:var(--serif);font-size:2rem;font-weight:600}
+  .modal-price .vol{font-size:.8rem;color:var(--muted)}
+  .modal-actions{display:flex;gap:.7rem;align-items:center}
+  .qty{display:flex;align-items:center;border:1px solid var(--line);border-radius:50px;overflow:hidden;background:var(--white)}
+  .qty button{width:38px;height:44px;font-size:1.1rem;color:var(--ink-soft)}
+  .qty span{width:34px;text-align:center;font-weight:500}
+  .modal-close{position:absolute;top:1rem;right:1rem;z-index:3;width:40px;height:40px;border-radius:50%;
+    background:rgba(255,255,255,.85);display:grid;place-items:center;transition:.3s}
+  .modal-close:hover{background:var(--white);transform:rotate(90deg)}
+  .ideal{font-size:.74rem;color:var(--gold-deep);letter-spacing:.1em;text-transform:uppercase;margin-top:1rem}
+
+  /* ---------- Cart drawer ---------- */
+  .drawer{position:fixed;top:0;right:0;height:100%;width:min(420px,100vw);background:var(--cream-2);z-index:101;
+    transform:translateX(100%);transition:.45s cubic-bezier(.2,.7,.3,1);display:flex;flex-direction:column;box-shadow:var(--shadow)}
+  .drawer.open{transform:translateX(0)}
+  .drawer-head{padding:1.5rem;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .drawer-head h3{font-size:1.7rem;font-weight:600}
+  .drawer-items{flex:1;overflow:auto;padding:1rem 1.5rem}
+  .citem{display:grid;grid-template-columns:64px 1fr auto;gap:.9rem;padding:1rem 0;border-bottom:1px solid var(--line);align-items:center}
+  .citem img{width:64px;height:80px;object-fit:cover;border-radius:10px;background:#F7F0E6}
+  .citem .n{font-family:var(--serif);font-size:1.15rem;font-weight:600;line-height:1}
+  .citem .c{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep)}
+  .citem .qrow{display:flex;align-items:center;gap:.5rem;margin-top:.4rem}
+  .citem .qrow button{width:24px;height:24px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:.9rem}
+  .citem .rm{font-size:.7rem;color:var(--muted);text-decoration:underline;margin-top:.3rem;display:inline-block}
+  .citem .pr{font-family:var(--serif);font-weight:600}
+  .cart-empty{text-align:center;color:var(--muted);padding:3rem 1rem;font-size:.9rem}
+  .cart-empty svg{width:56px;height:56px;color:var(--line);margin:0 auto 1rem}
+  .drawer-foot{padding:1.5rem;border-top:1px solid var(--line);background:var(--cream-3)}
+  .drawer-foot .line{display:flex;justify-content:space-between;font-size:.85rem;margin-bottom:.4rem;color:var(--ink-soft)}
+  .drawer-foot .total{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:var(--ink)}
+  .drawer-foot .btn{width:100%;margin-top:1rem}
+  .ship-note{font-size:.72rem;color:var(--muted);text-align:center;margin-top:.7rem}
+
+  /* ---------- Checkout demo ---------- */
+  .checkout{padding:2.4rem}
+  .checkout h2{font-size:2rem;font-weight:600;margin-bottom:.3rem}
+  .demo-banner{background:#fff5e0;border:1px solid #e8cf94;color:#8a6d1f;border-radius:12px;
+    padding:.9rem 1.1rem;font-size:.82rem;margin:1rem 0 1.5rem;display:flex;gap:.6rem;align-items:flex-start}
+  .demo-banner svg{width:20px;height:20px;flex:none;margin-top:1px}
+  .co-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+  .field{margin-bottom:.9rem}
+  .field.full{grid-column:1/-1}
+  .field label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:.35rem}
+  .field input,.field select{width:100%;padding:.8em 1em;border:1px solid var(--line);border-radius:12px;background:var(--white);font-family:inherit;color:var(--ink)}
+  .field input:disabled{opacity:.65}
+  .pay-methods{display:flex;gap:.6rem;margin:.6rem 0 1.4rem;flex-wrap:wrap}
+  .pay-methods .m{flex:1;min-width:90px;border:1px solid var(--line);border-radius:12px;padding:.8rem;text-align:center;font-size:.72rem;color:var(--muted);background:var(--white)}
+  .pay-methods .m.sel{border-color:var(--gold);background:#fff}
+  .co-summary{background:var(--cream-3);border-radius:12px;padding:1.2rem;margin-bottom:1.2rem}
+  .co-summary .line{display:flex;justify-content:space-between;font-size:.85rem;margin-bottom:.4rem}
+  .co-summary .total{font-family:var(--serif);font-size:1.4rem;font-weight:600;border-top:1px solid var(--line);padding-top:.6rem;margin-top:.4rem}
+
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120%);
+    background:var(--ink);color:var(--cream-2);padding:.9em 1.4em;border-radius:50px;font-size:.85rem;z-index:200;
+    transition:.5s cubic-bezier(.2,.7,.3,1);box-shadow:var(--shadow);display:flex;gap:.6rem;align-items:center}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+  .toast svg{width:18px;height:18px;color:var(--gold)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:.9s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1;transform:none}
 
   /* ---------- Responsive ---------- */
-  @media (max-width:900px){
-    .nav-links{ display:none; }
-    .nav-toggle{ display:block; }
-    .hero-inner{ grid-template-columns:1fr; text-align:center; }
-    .hero p{ margin-left:auto; margin-right:auto; }
-    .btn-row{ justify-content:center; }
-    .hero-img{ order:-1; max-width:360px; margin:0 auto; }
-    .product-grid{ grid-template-columns:repeat(2, 1fr); }
-    .ingredient-grid{ grid-template-columns:1fr; gap:48px; }
-    .about-inner{ grid-template-columns:1fr; }
-    .about-media{ order:-1; }
-    .testimonial-grid{ grid-template-columns:1fr; }
-    .footer-grid{ grid-template-columns:1fr 1fr; }
+  @media(max-width:1000px){
+    .grid,.benefit-grid{grid-template-columns:repeat(2,1fr)}
+    .quiz-grid{grid-template-columns:repeat(3,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    nav.links{display:none}
+    .burger{display:grid}
+    .modal-grid{grid-template-columns:1fr}
+    .modal-media{aspect-ratio:4/3}
+    .hero-bg,.band .pbg{background-attachment:scroll}
   }
-  @media (max-width:560px){
-    .product-grid{ grid-template-columns:1fr; }
-    .footer-grid{ grid-template-columns:1fr; gap:32px; }
-    section{ padding:80px 0; }
+  @media(max-width:600px){
+    .grid,.benefit-grid,.quiz-grid,.steps,.foot-grid,.co-grid{grid-template-columns:1fr}
+    .hero-meta{gap:1.2rem}
+    .news{padding:2.2rem 1.4rem}
+    .sect{padding:4rem 0}
+    .hero h1{font-size:2.6rem}
   }
+  /* mobile menu */
+  .mmenu{position:fixed;inset:0;z-index:90;background:var(--cream-2);transform:translateX(100%);transition:.4s;display:flex;flex-direction:column;padding:5rem 2rem 2rem}
+  .mmenu.open{transform:translateX(0)}
+  .mmenu a{font-family:var(--serif);font-size:2rem;padding:.6rem 0;border-bottom:1px solid var(--line)}
+  .mmenu .x{position:absolute;top:1.5rem;right:1.5rem;width:44px;height:44px}
 </style>
 </head>
 <body>
 
-<header>
-  <nav class="nav">
-    <a href="#" class="logo">SABAMIE</a>
-    <ul class="nav-links">
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#ingredientes">Ingredientes</a></li>
-      <li><a href="#historia">Nosotras</a></li>
-      <li><a href="#resenas">Reseñas</a></li>
-    </ul>
-    <a href="#productos" class="btn nav-cta">Comprar</a>
-    <button class="nav-toggle" aria-label="Menú">☰</button>
-  </nav>
+<div class="announce">Envío <b>gratis</b> en compras mayores a $999 · Colección 2026 · Ingeniería en cosméticos</div>
+
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="SABAMIE inicio">
+      <span class="word">SAB<i>A</i>MIE</span>
+      <small>Ingeniería en cosméticos</small>
+    </a>
+    <nav class="links" aria-label="Principal">
+      <a href="#tienda">Tienda</a>
+      <a href="#rutina">La Rutina</a>
+      <a href="#ciencia">Ciencia</a>
+      <a href="#objetivo">Tu piel</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" aria-label="Buscar" onclick="toast('La búsqueda estará disponible pronto')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Carrito" onclick="openCart()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn burger" aria-label="Menú" onclick="toggleMenu(true)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-copy reveal visible">
-      <span class="hero-eyebrow">Colección 2026</span>
-      <h1>Piel en calma,<br><em>ritual</em> en cada gota.</h1>
-      <p>SABAMIE formula skincare con ingredientes naturales y activos de alta concentración, pensado para rutinas simples que sí funcionan.</p>
-      <div class="btn-row">
-        <a href="#productos" class="btn btn-primary">Ver colección</a>
-        <a href="#historia" class="btn btn-outline">Nuestra historia</a>
+<div class="mmenu" id="mmenu">
+  <button class="x icon-btn" onclick="toggleMenu(false)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <a href="#tienda" onclick="toggleMenu(false)">Tienda</a>
+  <a href="#rutina" onclick="toggleMenu(false)">La Rutina</a>
+  <a href="#ciencia" onclick="toggleMenu(false)">Ciencia</a>
+  <a href="#objetivo" onclick="toggleMenu(false)">Tu piel</a>
+  <a href="#contacto" onclick="toggleMenu(false)">Contacto</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <span class="float" style="width:120px;height:120px;top:18%;right:12%;animation:floaty 9s ease-in-out infinite"></span>
+    <span class="float" style="width:64px;height:64px;top:60%;right:26%;animation:floaty 7s ease-in-out infinite .8s"></span>
+    <span class="float" style="width:40px;height:40px;top:34%;right:38%;animation:floaty 8s ease-in-out infinite .3s"></span>
+    <div class="wrap hero-inner">
+      <span class="eyebrow">Colección 2026</span>
+      <h1>Ciencia que <em>transforma</em> tu piel</h1>
+      <p class="lead">Fórmulas desarrolladas con precisión científica y activos inteligentes, pensadas para acompañar cada etapa de tu rutina diaria.</p>
+      <div class="hero-cta">
+        <a href="#tienda" class="btn btn-primary">Explorar la colección
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#objetivo" class="btn btn-ghost">Encuentra tu rutina</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>10</b><span>Fórmulas</span></div>
+        <div><b>100%</b><span>Base científica</span></div>
+        <div><b>COFEPRIS</b><span>Registrado</span></div>
       </div>
     </div>
-    <div class="hero-img reveal reveal-d1 visible">
-      <img src="img/hero-product.jpg" alt="Colección de productos SABAMIE: sérum, crema y limpiador facial" width="1200" height="1200" loading="eager">
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="products" id="productos">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="section-eyebrow">Bestsellers</span>
-      <h2>La rutina esencial</h2>
-      <p>Seis fórmulas, un mismo compromiso: ingredientes limpios, resultados visibles.</p>
-    </div>
-    <div class="product-grid">
-
-      <div class="product-card reveal">
-        <div class="product-media"><img src="img/product-serum.jpg" alt="Sérum facial Vitamina C SABAMIE" loading="lazy"></div>
-        <div class="product-body">
-          <span class="product-tag">Sérum</span>
-          <h3>Sérum Luz Vitamina C</h3>
-          <p>Ilumina y unifica el tono con vitamina C estabilizada al 15%.</p>
-          <div class="product-footer">
-            <span class="price">$620 MXN</span>
-            <button class="add-btn" data-product="Sérum Luz Vitamina C">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card reveal reveal-d1">
-        <div class="product-media"><img src="img/product-cream.jpg" alt="Crema hidratante de noche SABAMIE" loading="lazy"></div>
-        <div class="product-body">
-          <span class="product-tag">Crema</span>
-          <h3>Crema Noche Reparadora</h3>
-          <p>Textura en bálsamo con ceramidas para una barrera cutánea fuerte.</p>
-          <div class="product-footer">
-            <span class="price">$780 MXN</span>
-            <button class="add-btn" data-product="Crema Noche Reparadora">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card reveal reveal-d2">
-        <div class="product-media"><img src="img/product-cleanser.jpg" alt="Limpiador espumoso suave SABAMIE" loading="lazy"></div>
-        <div class="product-body">
-          <span class="product-tag">Limpiador</span>
-          <h3>Espuma Pureza Suave</h3>
-          <p>Limpieza sin tirantez, con extracto de avena y aloe vera.</p>
-          <div class="product-footer">
-            <span class="price">$450 MXN</span>
-            <button class="add-btn" data-product="Espuma Pureza Suave">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card reveal">
-        <div class="product-media"><img src="img/product-toner.jpg" alt="Tónico equilibrante SABAMIE" loading="lazy"></div>
-        <div class="product-body">
-          <span class="product-tag">Tónico</span>
-          <h3>Tónico Equilibrio</h3>
-          <p>Rocío de té verde y niacinamida que prepara la piel para absorber.</p>
-          <div class="product-footer">
-            <span class="price">$390 MXN</span>
-            <button class="add-btn" data-product="Tónico Equilibrio">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card reveal reveal-d1">
-        <div class="product-media"><img src="img/product-oil.jpg" alt="Aceite facial nutritivo SABAMIE" loading="lazy"></div>
-        <div class="product-body">
-          <span class="product-tag">Aceite</span>
-          <h3>Aceite Nutre Rosa Mosqueta</h3>
-          <p>Prensado en frío, sella la hidratación y aporta luminosidad.</p>
-          <div class="product-footer">
-            <span class="price">$690 MXN</span>
-            <button class="add-btn" data-product="Aceite Nutre Rosa Mosqueta">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="product-card reveal reveal-d2">
-        <div class="product-media"><img src="img/product-mask.jpg" alt="Mascarilla de arcilla purificante SABAMIE" loading="lazy"></div>
-        <div class="product-body">
-          <span class="product-tag">Mascarilla</span>
-          <h3>Mascarilla Arcilla Pura</h3>
-          <p>Arcilla caolín y carbón activado para poros visiblemente afinados.</p>
-          <div class="product-footer">
-            <span class="price">$510 MXN</span>
-            <button class="add-btn" data-product="Mascarilla Arcilla Pura">Agregar</button>
-          </div>
-        </div>
-      </div>
-
+  <!-- TRUST MARQUEE -->
+  <div class="trust" aria-hidden="true">
+    <div class="row">
+      <span>Activos Inteligentes</span><span>Fórmulas Avanzadas</span><span>Respaldo Científico</span><span>Calidad Sabamie</span><span>Resultados Visibles</span>
+      <span>Activos Inteligentes</span><span>Fórmulas Avanzadas</span><span>Respaldo Científico</span><span>Calidad Sabamie</span><span>Resultados Visibles</span>
     </div>
   </div>
-</section>
 
-<section class="ingredients" id="ingredientes">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="section-eyebrow">De origen natural</span>
-      <h2>Ingredientes en los que confiamos</h2>
-      <p>Cada fórmula parte de activos reconocidos, en las dosis correctas, sin rellenos.</p>
+  <!-- BENEFITS -->
+  <section class="benefits sect" id="ciencia">
+    <div class="wrap">
+      <div class="sect-head reveal">
+        <span class="eyebrow">Ciencia · Precisión · Resultados</span>
+        <h2>Ingeniería al servicio de tu piel</h2>
+        <div class="divider"></div>
+        <p>En Sabamie creemos que la belleza auténtica nace del equilibrio entre ciencia y naturaleza.</p>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6M10 3v5l-5 9a3 3 0 0 0 3 4h8a3 3 0 0 0 3-4l-5-9V3"/></svg></div>
+          <h3>Fórmulas avanzadas</h3><p>Ingredientes seleccionados con precisión científica y biotecnología.</p>
+        </div>
+        <div class="benefit reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="20" r="2"/><path d="M7 7l3.5 3.5M17 7l-3.5 3.5M12 15v3"/></svg></div>
+          <h3>Activos inteligentes</h3><p>Tecnología que potencia la salud y resistencia natural de la piel.</p>
+        </div>
+        <div class="benefit reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Calidad Sabamie</h3><p>Altos estándares y compromiso con la excelencia y tu bienestar.</p>
+        </div>
+        <div class="benefit reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13h13V6H3zM16 9h4l1 4v3h-5z"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></div>
+          <h3>Envío nacional</h3><p>Recibe tu rutina en casa. Envío gratis en compras desde $999.</p>
+        </div>
+      </div>
     </div>
-    <div class="ingredient-grid">
-      <div class="ingredient-card reveal">
-        <div class="ingredient-media"><img src="img/ingredient-aloe.jpg" alt="Aloe vera" loading="lazy"></div>
-        <h3>Aloe Vera</h3>
-        <p>Calma, refresca y aporta hidratación ligera de larga duración.</p>
-      </div>
-      <div class="ingredient-card reveal reveal-d1">
-        <div class="ingredient-media"><img src="img/ingredient-rosehip.jpg" alt="Rosa mosqueta" loading="lazy"></div>
-        <h3>Rosa Mosqueta</h3>
-        <p>Rica en ácidos grasos esenciales, ayuda a la regeneración cutánea.</p>
-      </div>
-      <div class="ingredient-card reveal reveal-d2">
-        <div class="ingredient-media"><img src="img/ingredient-greentea.jpg" alt="Té verde" loading="lazy"></div>
-        <h3>Té Verde</h3>
-        <p>Antioxidante natural que protege la piel del estrés ambiental.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="about" id="historia">
-  <div class="container about-inner">
-    <div class="about-media reveal">
-      <img src="img/section-bg-2.jpg" alt="Estudio SABAMIE" loading="lazy" style="border-radius:18px;">
-    </div>
-    <div class="reveal reveal-d1">
-      <span class="section-eyebrow">Nuestra historia</span>
-      <h2>Skincare honesto, sin promesas vacías</h2>
-      <p>SABAMIE nació de la idea simple de que una rutina de piel no necesita doce pasos ni ingredientes imposibles de pronunciar. Formulamos en lotes pequeños, probamos cada activo en su concentración efectiva y evitamos rellenos innecesarios.</p>
-      <p>Cada frasco se piensa para durar, para sentirse bien en la piel y para dar resultados que se noten en semanas, no en promesas.</p>
-      <div class="stat-row">
-        <div class="stat"><h4>100%</h4><span>Vegano</span></div>
-        <div class="stat"><h4>0</h4><span>Parabenos</span></div>
-        <div class="stat"><h4>+8k</h4><span>Clientas felices</span></div>
+  <!-- SHOP -->
+  <section class="sect" id="tienda">
+    <div class="wrap">
+      <div class="sect-head reveal">
+        <span class="eyebrow">La Colección</span>
+        <h2>Nuestra línea completa</h2>
+        <div class="divider"></div>
+        <p>Diez fórmulas para construir tu rutina inteligente, paso a paso.</p>
       </div>
+      <div class="filters reveal" id="filters"></div>
+      <div class="grid" id="grid"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="testimonials" id="resenas">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="section-eyebrow">Lo que dicen</span>
-      <h2>Reseñas reales</h2>
-      <p>Historias de piel de nuestra comunidad SABAMIE.</p>
+  <!-- PARALLAX QUOTE -->
+  <section class="band">
+    <div class="pbg" style="background-image:url(img/band-molecule.jpg)"></div>
+    <div class="band-inner reveal">
+      <p class="q">"Sabamie es más que cosméticos. Es ingeniería cosmética al servicio de tu bienestar y tu confianza."</p>
+      <p class="attr">Tu mejor versión, nuestra inspiración</p>
     </div>
-    <div class="testimonial-grid">
-      <div class="testimonial-card reveal">
-        <div class="stars">★★★★★</div>
-        <p>"El sérum de vitamina C cambió por completo mi rutina. En un mes mi piel se ve más pareja y luminosa."</p>
-        <div class="t-author">Daniela R.</div>
-        <div class="t-role">Ciudad de México</div>
-      </div>
-      <div class="testimonial-card reveal reveal-d1">
-        <div class="stars">★★★★★</div>
-        <p>"Tengo piel sensible y la espuma de limpieza es la primera que no me deja tirante. Ya voy en mi tercer frasco."</p>
-        <div class="t-author">Valeria M.</div>
-        <div class="t-role">Guadalajara</div>
-      </div>
-      <div class="testimonial-card reveal reveal-d2">
-        <div class="stars">★★★★★</div>
-        <p>"La crema de noche huele delicioso y al despertar la piel se siente increíblemente suave. Ya es parte de mi ritual."</p>
-        <div class="t-author">Camila S.</div>
-        <div class="t-role">Monterrey</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="newsletter">
-  <div class="container">
-    <h2 class="reveal">10% de descuento en tu primera compra</h2>
-    <p class="reveal">Súmate a la lista SABAMIE y recibe tips de skincare y acceso anticipado a lanzamientos.</p>
-    <form class="newsletter-form reveal" id="newsletter-form">
-      <input type="email" placeholder="Tu correo electrónico" required>
-      <button type="submit">Suscribirme</button>
-    </form>
-    <p class="form-msg" id="form-msg"></p>
-  </div>
-</section>
+  <!-- ROUTINE -->
+  <section class="routine sect" id="rutina">
+    <div class="wrap">
+      <div class="sect-head reveal">
+        <span class="eyebrow">Guía práctica de uso</span>
+        <h2>La Rutina SABAMIE</h2>
+        <div class="divider"></div>
+        <p>Sigue estos pasos cada día para una piel saludable. La constancia es el mejor tratamiento.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="num">01</span><span class="k">Limpia</span><h3>Activant</h3><p>Elimina impurezas, exceso de grasa y prepara tu piel.</p></div>
+        <div class="step reveal"><span class="num">02</span><span class="k">Equilibra</span><h3>Tónico Balance</h3><p>Equilibra el pH y mejora la absorción de los tratamientos.</p></div>
+        <div class="step reveal"><span class="num">03</span><span class="k">Trata</span><h3>Sueros</h3><p>Elige el tratamiento que mejor se adapte a tu piel: Niacinamida, Hialurónico, Retracter…</p></div>
+        <div class="step reveal"><span class="num">04</span><span class="k">Contorno</span><h3>Lumineux Eye</h3><p>Cuidado especializado que reduce signos de fatiga en la mirada.</p></div>
+        <div class="step reveal"><span class="num">05</span><span class="k">Hidrata o repara</span><h3>Restaurer · Eternelle</h3><p>Refuerza la barrera cutánea y mantiene tu piel confortable.</p></div>
+        <div class="step reveal"><span class="num">06</span><span class="k">Protege</span><h3>Soilare</h3><p>Filtro solar FPS 50. Acabado invisible o con color unificador.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJETIVO / QUIZ -->
+  <section class="sect" id="objetivo">
+    <div class="wrap">
+      <div class="sect-head reveal">
+        <span class="eyebrow">Guía para elegir tu tratamiento ideal</span>
+        <h2>¿Qué necesita hoy tu piel?</h2>
+        <div class="divider"></div>
+        <p>Identifica tu objetivo y te llevamos al tratamiento que mejor se adapta a ti.</p>
+      </div>
+      <div class="quiz-grid" id="quizGrid"></div>
+    </div>
+  </section>
+
+  <!-- PARALLAX LAB -->
+  <section class="band dark">
+    <div class="pbg" style="background-image:url(img/band-lab.jpg)"></div>
+    <div class="band-inner reveal">
+      <p class="q">"La ciencia de una piel saludable comienza con una rutina inteligente."</p>
+      <p class="attr">Sabamie · Colección 2026</p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="sect" id="contacto">
+    <div class="wrap reveal">
+      <div class="news">
+        <span class="molecule">✦</span>
+        <span class="eyebrow" style="color:var(--gold)">Únete al ritual</span>
+        <h2>Rutinas inteligentes, en tu correo</h2>
+        <p>Recibe guías de skincare con base científica, lanzamientos y ofertas exclusivas de Sabamie.</p>
+        <form onsubmit="subscribe(event)">
+          <input type="email" required placeholder="Tu correo electrónico" aria-label="Correo" />
+          <button class="btn btn-gold" type="submit">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo">SABAMIE</div>
-        <p>Skincare natural formulado para rutinas simples y resultados reales.</p>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="word">SAB<i>A</i>MIE</span>
+        <p>Ingeniería en cosméticos. La ciencia de una piel saludable comienza con una rutina inteligente.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/sabamieskincare" aria-label="Instagram @sabamieskincare" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/SabamieSkincare" aria-label="Facebook Sabamie Skincare" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14v-1.5c0-.6.3-.5 0-.5z"/></svg></a>
+        </div>
       </div>
-      <div class="footer-col">
+      <div>
         <h4>Tienda</h4>
-        <ul>
-          <li><a href="#productos">Sérums</a></li>
-          <li><a href="#productos">Cremas</a></li>
-          <li><a href="#productos">Limpiadores</a></li>
-          <li><a href="#productos">Aceites</a></li>
-        </ul>
+        <a href="#tienda">Limpieza</a><a href="#tienda">Tratamientos</a><a href="#tienda">Hidratación</a><a href="#tienda">Protección solar</a><a href="#tienda">Contorno de ojos</a>
       </div>
-      <div class="footer-col">
-        <h4>Marca</h4>
-        <ul>
-          <li><a href="#historia">Nuestra historia</a></li>
-          <li><a href="#ingredientes">Ingredientes</a></li>
-          <li><a href="#resenas">Reseñas</a></li>
-        </ul>
+      <div>
+        <h4>Sabamie</h4>
+        <a href="#ciencia">Nuestra ciencia</a><a href="#rutina">La rutina</a><a href="#objetivo">Tu tipo de piel</a><a href="#contacto">Contacto</a>
       </div>
-      <div class="footer-col">
-        <h4>Contacto</h4>
-        <ul>
-          <li><a href="mailto:hola@sabamie.com">hola@sabamie.com</a></li>
-          <li><a href="tel:+525500000000">+52 55 0000 0000</a></li>
-        </ul>
+      <div>
+        <h4>Ayuda</h4>
+        <a onclick="toast('Demo: envíos en 2–4 días hábiles')">Envíos y entregas</a>
+        <a onclick="toast('Demo: 30 días de garantía')">Devoluciones</a>
+        <a onclick="toast('Demo: pago seguro simulado')">Métodos de pago</a>
+        <a onclick="toast('¿Dudas? Nuestro equipo te ayuda a elegir tu rutina.')">Asesoría de piel</a>
+        <div class="pays">
+          <span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>OXXO</span><span>PAYPAL</span>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 SABAMIE. Todos los derechos reservados.</p>
-      <div class="socials">
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="TikTok">TT</a>
-        <a href="#" aria-label="Facebook">FB</a>
-      </div>
+    <div class="legal">
+      <span>© 2026 SABAMIE · Ingeniería en cosméticos. Sitio demostrativo.</span>
+      <span class="cofepris">Avisos de funcionamiento COFEPRIS: 2314105018X01830 · 163300202D0279</span>
     </div>
   </div>
 </footer>
 
-<div class="toast" id="toast"></div>
+<!-- OVERLAY -->
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+<!-- QUICK VIEW MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <button class="modal-close" onclick="closeAll()" aria-label="Cerrar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="18" height="18"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <div id="modalContent"></div>
+</div>
+
+<!-- CART DRAWER -->
+<aside class="drawer" id="drawer" aria-label="Carrito de compra">
+  <div class="drawer-head">
+    <h3>Tu carrito</h3>
+    <button class="icon-btn" onclick="closeAll()" aria-label="Cerrar carrito">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot" id="drawerFoot"></div>
+</aside>
+
+<div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span id="toastMsg"></span></div>
 
 <script>
-  // Scroll reveal
-  const revealEls = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => observer.observe(el));
+/* ============ DATA ============ */
+const CURRENCY='MXN';
+const products=[
+ {id:'activant',name:'Activant',line:'Shampoo Facial',cat:'Limpieza',accent:'#1f47a3',price:349,vol:'120 mL',
+  img:'img/activant.jpg',rating:4.8,reviews:126,ideal:'Piel mixta y grasa',
+  tagline:'pH balanceado',desc:'Fórmula suave y efectiva que limpia profundamente sin resecar, respeta el equilibrio natural de la piel y controla el exceso de grasa.',
+  feats:[['Limpieza profunda','Elimina impurezas y exceso de grasa.'],['Equilibrio del pH','Respeta y mantiene el pH natural de la piel.'],['Piel fresca y purificada','Sensación de limpieza duradera.']]},
+ {id:'tonico',name:'Tónico Balance',line:'Loción Facial',cat:'Equilibrio',accent:'#1f6f6a',price:389,vol:'120 mL',
+  img:'img/tonico.jpg',rating:4.7,reviews:98,ideal:'Todo tipo de piel',
+  tagline:'Balanceador de pH',desc:'Restaura el equilibrio natural de la piel después de la limpieza. Tonifica, hidrata y prepara la piel para recibir los tratamientos posteriores.',
+  feats:[['Equilibra','Restaura y mantiene el pH natural.'],['Tonifica','Refresca y revitaliza la piel.'],['Prepara','Optimiza la absorción de los tratamientos.']]},
+ {id:'niacinamida',name:'Niacinamida',line:'Suero Facial',cat:'Tratamiento',accent:'#b0227a',price:549,vol:'30 mL',
+  img:'img/niacinamida.jpg',rating:4.9,reviews:214,ideal:'Piel mixta y grasa',
+  tagline:'Complejo herbal y zinc',desc:'Fórmula avanzada que combina niacinamida con extractos herbales y zinc para mejorar visiblemente la apariencia de la piel.',
+  feats:[['Restaura y mejora','Mejora la apariencia general de la piel.'],['Equilibra y controla','Regula el exceso de grasa y minimiza poros.'],['Fortalece y protege','Refuerza la barrera cutánea.']]},
+ {id:'hialuronic',name:'Hialuronic',line:'Suero Facial',cat:'Hidratación',accent:'#1b3fa0',price:599,vol:'30 mL',
+  img:'img/hialuronic.jpg',rating:4.9,reviews:301,ideal:'Todo tipo de piel',
+  tagline:'Ácido hialurónico 3%',desc:'Hidratación profunda e inmediata que ayuda a mantener la piel suave, elástica y visiblemente más saludable.',
+  feats:[['Hidrata intensamente','Aporta y retiene humedad en capas profundas.'],['Mejora la elasticidad','Deja la piel más suave y flexible.'],['Fortalece la barrera','Protege contra la deshidratación.']]},
+ {id:'retracter',name:'Retracter',line:'Suero Facial',cat:'Revitalización',accent:'#7a2f6d',price:899,vol:'30 mL',
+  img:'img/retracter.jpg',rating:5.0,reviews:88,ideal:'Pieles maduras o con signos de edad',
+  tagline:'Células madre · Bioestimulante',desc:'Bioestimula la producción natural de colágeno y elastina, mejorando la firmeza, elasticidad y densidad de la piel.',
+  feats:[['Revitaliza y regenera','Estimula la regeneración celular.'],['Mejora elasticidad','Reduce líneas finas y arrugas.'],['Protege y repara','Previene el envejecimiento prematuro.']]},
+ {id:'restaurer',name:'Restaurer',line:'Crema Hidratante Reparadora',cat:'Reparación',accent:'#c0286f',price:749,vol:'40 mL',
+  img:'img/restaurer.jpg',rating:4.8,reviews:142,ideal:'Pieles maduras',
+  tagline:'Repara · Fortalece · Confort',desc:'Combina activos hidratantes, lípidos y regeneradores para restaurar la barrera cutánea, mejorar la elasticidad y brindar confort duradero.',
+  feats:[['Repara','Favorece la recuperación de la barrera cutánea.'],['Fortalece','Mejora la resistencia natural de la piel.'],['Nutre y calma','Aporta lípidos y alivia la tirantez.']]},
+ {id:'eternelle',name:'Eternelle',line:'Crema Facial Anti-Age',cat:'Anti-Age',accent:'#c05a2a',price:829,vol:'50 mL',
+  img:'img/eternelle.jpg',rating:4.9,reviews:176,ideal:'Piel joven a la primera edad',
+  tagline:'Ultra hidratante · Anti-age',desc:'Fórmula ligera y avanzada que aporta hidratación profunda, mejora la elasticidad y ayuda a prevenir los primeros signos del envejecimiento.',
+  feats:[['Hidrata','Hidratación profunda y duradera sin sensación grasa.'],['Previene','Ayuda a prevenir los primeros signos de la edad.'],['Ilumina y suaviza','Devuelve vitalidad y textura uniforme.']]},
+ {id:'soilare-white',name:'Soilare White',line:'Filtro Solar FPS 50',cat:'Protección',accent:'#d96a1f',price:459,vol:'50 mL',
+  img:'img/soilare-white.jpg',rating:4.8,reviews:203,ideal:'Todo tipo de piel',
+  tagline:'FPS 50 · UVB + UVA',desc:'Protector solar de amplio espectro que combina filtros de última generación con activos que previenen el daño solar y el fotoenvejecimiento.',
+  feats:[['Protege','Alta protección FPS 50 contra UVA y UVB.'],['Previene','Ayuda a prevenir el fotoenvejecimiento.'],['Unifica y fortalece','Piel más clara, uniforme y luminosa.']]},
+ {id:'soilare-color',name:'Soilare Color',line:'Filtro Solar con color FPS 50+',cat:'Protección',accent:'#d98a2a',price:499,vol:'30 mL',
+  img:'img/soilare-color.jpg',rating:4.9,reviews:167,ideal:'Todo tipo de piel · tono medio a oscuro',
+  tagline:'Camouflage Effect · FPS 50+',desc:'Protector solar con color que unifica el tono y disimula imperfecciones al instante, mientras protege de los rayos UV y la luz visible.',
+  feats:[['Protege','FPS 50+ contra UVA, UVB y luz visible.'],['Unifica','Efecto camuflaje que disimula imperfecciones.'],['Previene y fortalece','Previene el daño solar y mantiene luminosidad.']]},
+ {id:'lumineux',name:'Lumineux Eye',line:'Advanced Eye Contour',cat:'Contorno de ojos',accent:'#b0227a',price:649,vol:'10 mL',
+  img:'img/lumineux.jpg',rating:4.9,reviews:119,ideal:'Todo tipo de piel, incluso sensible',
+  tagline:'Tratamiento avanzado de contorno',desc:'Combina activos de alta tecnología para reducir visiblemente bolsas, ojeras y líneas de expresión. Su aplicador de triple acción masajea y potencia la absorción.',
+  feats:[['Desinfla','Reduce bolsas y signos de fatiga.'],['Ilumina','Mejora ojeras y devuelve luminosidad.'],['Reafirma e hidrata','Mejora firmeza y fortalece la barrera.']]},
+];
 
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.style.display === 'flex';
-    navLinks.style.display = isOpen ? 'none' : 'flex';
-    navLinks.style.cssText += isOpen ? '' : 'position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--cream);padding:24px;gap:20px;text-align:center;box-shadow:0 12px 24px rgba(0,0,0,0.08);';
-  });
+const money=n=>'$'+n.toLocaleString('es-MX')+' '+CURRENCY;
 
-  // Toast helper
-  const toast = document.getElementById('toast');
-  let toastTimer;
-  function showToast(msg){
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
+/* JSON-LD catalog */
+document.getElementById('ld-catalog').textContent=JSON.stringify({
+ "@context":"https://schema.org","@type":"ItemList","name":"Colección SABAMIE 2026",
+ "itemListElement":products.map((p,i)=>({"@type":"ListItem","position":i+1,"item":{
+   "@type":"Product","name":"SABAMIE "+p.name,"category":p.cat,"description":p.desc,
+   "image":"https://www.sabamie.com/"+p.img,"brand":{"@type":"Brand","name":"SABAMIE"},
+   "aggregateRating":{"@type":"AggregateRating","ratingValue":p.rating,"reviewCount":p.reviews},
+   "offers":{"@type":"Offer","price":p.price,"priceCurrency":"MXN","availability":"https://schema.org/InStock"}
+ }}))
+});
+
+/* ============ RENDER SHOP ============ */
+const cats=['Todos',...[...new Set(products.map(p=>p.cat))]];
+let activeCat='Todos';
+const filtersEl=document.getElementById('filters');
+filtersEl.innerHTML=cats.map(c=>`<button class="chip ${c==='Todos'?'active':''}" data-cat="${c}" onclick="filter('${c}')">${c}</button>`).join('');
+function starStr(r){const full=Math.round(r);return '★'.repeat(full)+'☆'.repeat(5-full);}
+function renderGrid(){
+  const list=activeCat==='Todos'?products:products.filter(p=>p.cat===activeCat);
+  document.getElementById('grid').innerHTML=list.map(p=>`
+   <article class="card reveal in">
+     <div class="media">
+       <span class="tag accent" style="background:${p.accent}">${p.cat}</span>
+       <img src="${p.img}" alt="SABAMIE ${p.name} — ${p.line}" loading="lazy" onclick="openModal('${p.id}')"/>
+       <button class="quick" onclick="openModal('${p.id}')">Vista rápida</button>
+     </div>
+     <div class="body">
+       <span class="cat">${p.line}</span>
+       <h3>${p.name}</h3>
+       <p class="sub">${p.tagline}</p>
+       <div class="stars">${starStr(p.rating)} <small>${p.rating} · ${p.reviews} reseñas</small></div>
+       <div class="foot">
+         <span class="price">${money(p.price)}<br><small>${p.vol}</small></span>
+         <button class="add" aria-label="Agregar ${p.name}" onclick="add('${p.id}',1,true)">
+           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+         </button>
+       </div>
+     </div>
+   </article>`).join('');
+}
+function filter(c){activeCat=c;document.querySelectorAll('.chip').forEach(ch=>ch.classList.toggle('active',ch.dataset.cat===c));renderGrid();}
+renderGrid();
+
+/* Quiz grid */
+const objetivos=[
+ ['Luminosidad y tono desigual','niacinamida'],['Deshidratación','hialuronic'],['Primeros signos de la edad','eternelle'],
+ ['Firmeza y líneas de expresión','retracter'],['Piel seca o barrera debilitada','restaurer'],
+ ['Contorno de ojos','lumineux'],['Protección invisible','soilare-white'],['Protección con color','soilare-color'],
+ ['Limpieza y equilibrio','activant'],['Tonificar el pH','tonico']
+];
+document.getElementById('quizGrid').innerHTML=objetivos.map(([label,id])=>{
+  const p=products.find(x=>x.id===id);
+  return `<div class="obj reveal" onclick="openModal('${id}')">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div>
+    <b>${label}</b><span>${p.name}</span></div>`;
+}).join('');
+
+/* ============ CART ============ */
+let cart={}; // id -> qty
+function add(id,qty=1,open=false){
+  cart[id]=(cart[id]||0)+qty;
+  updateCart();
+  const p=products.find(x=>x.id===id);
+  toast(`${p.name} agregado al carrito`);
+  if(open){/* keep browsing */}
+}
+function setQty(id,q){ if(q<=0){delete cart[id];}else{cart[id]=q;} updateCart(); }
+function updateCart(){
+  const ids=Object.keys(cart);
+  const count=ids.reduce((s,id)=>s+cart[id],0);
+  const cc=document.getElementById('cartCount');
+  cc.textContent=count; cc.classList.toggle('show',count>0);
+  const items=document.getElementById('drawerItems');
+  if(!ids.length){
+    items.innerHTML=`<div class="cart-empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+      Tu carrito está vacío.<br>Descubre tu rutina ideal.</div>`;
+    document.getElementById('drawerFoot').innerHTML=`<a href="#tienda" class="btn btn-ghost" onclick="closeAll()">Explorar la colección</a>`;
+    return;
   }
+  items.innerHTML=ids.map(id=>{const p=products.find(x=>x.id===id);const q=cart[id];return `
+    <div class="citem">
+      <img src="${p.img}" alt="${p.name}"/>
+      <div>
+        <span class="c">${p.cat}</span>
+        <div class="n">${p.name}</div>
+        <div class="qrow">
+          <button onclick="setQty('${id}',${q-1})" aria-label="Quitar uno">−</button>
+          <span>${q}</span>
+          <button onclick="setQty('${id}',${q+1})" aria-label="Agregar uno">+</button>
+        </div>
+        <a class="rm" onclick="setQty('${id}',0)">Eliminar</a>
+      </div>
+      <span class="pr">${money(p.price*q)}</span>
+    </div>`;}).join('');
+  const sub=ids.reduce((s,id)=>s+products.find(x=>x.id===id).price*cart[id],0);
+  const ship=sub>=999||sub===0?0:99;
+  document.getElementById('drawerFoot').innerHTML=`
+    <div class="line"><span>Subtotal</span><span>${money(sub)}</span></div>
+    <div class="line"><span>Envío</span><span>${ship===0?'Gratis':money(ship)}</span></div>
+    <div class="line" style="margin-top:.6rem"><span class="total">Total</span><span class="total">${money(sub+ship)}</span></div>
+    <button class="btn btn-primary" onclick="openCheckout()">Finalizar compra
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <p class="ship-note">${ship===0?'🎉 ¡Tienes envío gratis!':'Agrega '+money(999-sub)+' más para envío gratis'}</p>`;
+}
+updateCart();
 
-  // Add to cart (demo)
-  document.querySelectorAll('.add-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      showToast(`${btn.dataset.product} agregado al carrito`);
-    });
-  });
+/* ============ MODAL ============ */
+function openModal(id){
+  const p=products.find(x=>x.id===id);
+  window._modalQty=1;
+  document.getElementById('modalContent').innerHTML=`
+    <div class="modal-grid">
+      <div class="modal-media"><img src="${p.img}" alt="SABAMIE ${p.name}"/></div>
+      <div class="modal-body">
+        <span class="cat">${p.cat} · ${p.line}</span>
+        <h2>${p.name}</h2>
+        <p class="tagline">${p.tagline}</p>
+        <p class="desc">${p.desc}</p>
+        <ul class="feat">${p.feats.map(f=>`<li><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>${f[0]}</b><span>${f[1]}</span></span></li>`).join('')}</ul>
+        <div class="modal-price"><span class="p">${money(p.price)}</span><span class="vol">/ ${p.vol}</span></div>
+        <div class="modal-actions">
+          <div class="qty">
+            <button onclick="modalQty(-1)" aria-label="Menos">−</button>
+            <span id="mQty">1</span>
+            <button onclick="modalQty(1)" aria-label="Más">+</button>
+          </div>
+          <button class="btn btn-primary" style="flex:1" onclick="add('${p.id}',window._modalQty);closeAll();openCart()">Agregar al carrito</button>
+        </div>
+        <p class="ideal">✦ Ideal para: ${p.ideal}</p>
+      </div>
+    </div>`;
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function modalQty(d){window._modalQty=Math.max(1,window._modalQty+d);document.getElementById('mQty').textContent=window._modalQty;}
 
-  // Newsletter (demo)
-  document.getElementById('newsletter-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    document.getElementById('form-msg').textContent = '¡Gracias! Revisa tu correo para confirmar tu suscripción.';
-    e.target.reset();
-  });
+/* ============ CHECKOUT (DEMO) ============ */
+function openCheckout(){
+  const ids=Object.keys(cart);
+  const sub=ids.reduce((s,id)=>s+products.find(x=>x.id===id).price*cart[id],0);
+  const ship=sub>=999?0:99;
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('modalContent').innerHTML=`
+    <div class="checkout">
+      <span class="cat" style="font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:500">Pago seguro</span>
+      <h2>Finalizar compra</h2>
+      <div class="demo-banner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span><b>Vista demostrativa.</b> Esta es una demo: la pasarela de pago no está activa. Ningún cargo será realizado. Así se vería y funcionaría el checkout real.</span>
+      </div>
+      <div class="co-summary">
+        ${ids.map(id=>{const p=products.find(x=>x.id===id);return `<div class="line"><span>${p.name} × ${cart[id]}</span><span>${money(p.price*cart[id])}</span></div>`;}).join('')}
+        <div class="line"><span>Envío</span><span>${ship===0?'Gratis':money(ship)}</span></div>
+        <div class="line total"><span>Total</span><span>${money(sub+ship)}</span></div>
+      </div>
+      <div class="co-grid">
+        <div class="field"><label>Nombre</label><input placeholder="Tu nombre"/></div>
+        <div class="field"><label>Apellido</label><input placeholder="Tu apellido"/></div>
+        <div class="field full"><label>Correo</label><input type="email" placeholder="correo@ejemplo.com"/></div>
+        <div class="field full"><label>Dirección de envío</label><input placeholder="Calle, número, colonia"/></div>
+        <div class="field"><label>Ciudad</label><input placeholder="Ciudad"/></div>
+        <div class="field"><label>Código postal</label><input placeholder="00000"/></div>
+      </div>
+      <label style="font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Método de pago</label>
+      <div class="pay-methods">
+        <div class="m sel" onclick="selPay(this)">💳 Tarjeta</div>
+        <div class="m" onclick="selPay(this)">PayPal</div>
+        <div class="m" onclick="selPay(this)">OXXO</div>
+      </div>
+      <div class="co-grid">
+        <div class="field full"><label>Número de tarjeta</label><input placeholder="•••• •••• •••• ••••" disabled/></div>
+        <div class="field"><label>Vencimiento</label><input placeholder="MM/AA" disabled/></div>
+        <div class="field"><label>CVV</label><input placeholder="•••" disabled/></div>
+      </div>
+      <button class="btn btn-gold" style="width:100%;margin-top:.6rem" onclick="fakePay()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+        Pagar ${money(sub+ship)}</button>
+      <p class="ship-note">🔒 Pago cifrado (simulado) · Demostración SABAMIE</p>
+    </div>`;
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function selPay(el){document.querySelectorAll('.pay-methods .m').forEach(m=>m.classList.remove('sel'));el.classList.add('sel');}
+function fakePay(){
+  document.getElementById('modalContent').innerHTML=`
+    <div class="checkout" style="text-align:center;padding:3.5rem 2.4rem">
+      <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-deep));display:grid;place-items:center;margin:0 auto 1.4rem">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h2>¡Pedido confirmado!</h2>
+      <p style="color:var(--muted);max-width:360px;margin:.6rem auto 0">Gracias por confiar en Sabamie. En una tienda real recibirías tu confirmación por correo y el seguimiento de tu envío.</p>
+      <div class="demo-banner" style="text-align:left;margin:1.6rem auto 0;max-width:420px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span>Recuerda: esta es una demostración. No se procesó ningún pago.</span>
+      </div>
+      <button class="btn btn-primary" style="margin-top:1.6rem" onclick="cart={};updateCart();closeAll()">Seguir explorando</button>
+    </div>`;
+}
+
+/* ============ UI CONTROLS ============ */
+function openCart(){document.getElementById('overlay').classList.add('open');document.getElementById('drawer').classList.add('open');document.body.style.overflow='hidden';}
+function closeAll(){
+  document.getElementById('overlay').classList.remove('open');
+  document.getElementById('modal').classList.remove('open');
+  document.getElementById('drawer').classList.remove('open');
+  document.body.style.overflow='';
+}
+function toggleMenu(open){document.getElementById('mmenu').classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAll();toggleMenu(false);}});
+
+let toastT;
+function toast(msg){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=msg;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),2600);}
+function subscribe(e){e.preventDefault();e.target.reset();toast('¡Gracias por suscribirte a Sabamie! (demo)');}
+
+/* header scroll */
+const header=document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>30),{passive:true});
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* float keyframes injected */
+const st=document.createElement('style');
+st.textContent='@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-22px)}}';
+document.head.appendChild(st);
 </script>
-
 </body>
 </html>
